@@ -14,8 +14,9 @@ const superLottoRun = new Vue({
   },
   methods:{
     startSupperLotto(){
-      this.isLoading = true
+      
       if(!isNaN(parseInt(this.count))){
+        this.isLoading = true
         const countBoard = {
           count: parseInt(this.count),
           numbers:{
