@@ -12,10 +12,17 @@
   <div class="wrapper">
     <div id="superLottoRun" v-cloak>
       <div class="container">
-        <h1>威力彩隨機號碼產生</h1>
-        <p>產生多組威力彩號碼，篩選出現最多次號碼。</p>
-        產生組數<input type="text" name="count" v-model="count">
-        <button type="button" v-on:click="startSupperLotto()" v-bind:disabled="isLoading">Start</button>
+        <h1 class="pageTitle">威力彩隨機號碼產生</h1>
+        <p class="pageContent">產生多組威力彩號碼作為統計依據，再統計出現最多次的前六個號碼以及特別號。</p>
+        <div class="keyBoard">
+          <div class="form-item">
+            <label>
+              <div class="labelTitle">參照組數</div>
+              <input type="tel" name="count" v-model="count">
+            </label>
+          </div>
+          <button type="button" class="btn" v-on:click="startSupperLotto()" v-bind:disabled="isLoading">開始篩選</button>
+        </div>
         <div id="result">
           <ul class="lottoNumbers">
             <li class="lottoNumbers__item" v-for="(item,index) in results">

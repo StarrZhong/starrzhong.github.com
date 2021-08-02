@@ -1,15 +1,34 @@
 *{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+input:focus,select:focus,textarea:focus{
+  border: none;
+  outline: none;
 }
 [v-cloak]{
   display: none;
 }
 html,body{
   height: 100%;
+  background-color: #ffc300;
 }
 .wrapper{
   width: 100%;
   overflow: hidden;
+}
+.pageTitle{
+  margin-top: 2em;
+  margin-bottom: 1em;
+  
+}
+.pageContent{
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  margin-bottom: 30px;
 }
 .container{
   max-width: 1200px;
@@ -28,15 +47,48 @@ html,body{
 .lottoNumbers__item span{
   display: block;
   flex: 1 0 0;
-  padding: 10px 3px;
+  padding: 15px 3px;
   font-size: 1rem;
   text-align: center;
   border-style: solid;
   border-width: 1px 0px 1px 1px;
   border-color: #333;
+  background-color: #fff;
 }
 .lottoNumbers__item span:last-child{
   border-right-width: 1px;
-  background-color: red;
+  background-color: #ff5733;
   color: #FFF;
+}
+.btn{
+  cursor: pointer;
+  background-color: #ff5733;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  color: #FFF;
+  border: none;
+}
+.btn:disabled{
+  background-color: #c3c3c3;
+}
+input{
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+}
+.labelTitle{
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+.keyBoard > *{
+  vertical-align: bottom;
+  margin-bottom: 20px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.keyBoard > *:last-child{
+  margin-right: 0;
 }
