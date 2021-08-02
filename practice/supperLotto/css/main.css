@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+}
+[v-cloak]{
+  display: none;
+}
+html,body{
+  height: 100%;
+}
+.wrapper{
+  width: 100%;
+  overflow: hidden;
+}
+.container{
+  max-width: 1200px;
+  padding: 0 20px;
+  margin : 0 auto;
+}
+.lottoNumbers{
+  padding-left: 0;
+  list-style: none;
+}
+.lottoNumbers__item{
+  display: flex;
+  margin-bottom: 10px;
+  
+}
+.lottoNumbers__item span{
+  display: block;
+  flex: 1 0 0;
+  padding: 10px 3px;
+  font-size: 1rem;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px 0px 1px 1px;
+  border-color: #333;
+}
+.lottoNumbers__item span:last-child{
+  border-right-width: 1px;
+  background-color: red;
+  color: #FFF;
+}
