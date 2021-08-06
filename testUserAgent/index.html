@@ -10,7 +10,9 @@
 <body>
   <p id="userAgent"></p>
   <p id="isWebview"></p>
+  <p id="websiteUrl"></p>
   <script>
+    document.getElementById('websiteUrl').innerHTML = window.location
     function isWebview() {
       var useragent = navigator.userAgent;
       var rules = ['WebView','(iPhone|iPod|iPad)(?!.*Safari\/)','Android.*(wv|\.0\.0\.0)'];
