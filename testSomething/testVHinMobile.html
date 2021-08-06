@@ -4,33 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>testVHInMobile</title>
-  <style>
-    
-    html,body{
-      height: -webkit-fill-available;
-    }
-    *{
-      padding: 0;
-      margin: 0;
-    }
-    .vhBox{
-      min-height: 100vh;
-      /* mobile viewport bug fix */
-      min-height: -webkit-fill-available;
-      
-      background-color: #086;
-      color: #FFF;
-      text-align: center;
-      
-    }
-  </style>
+  <title>test</title>
+  
 </head>
 <body>
-  <div class="wrapper">
-    <div class="vhBox">
-      <h1>~ Hi ~</h1>
-    </div>
-  </div>
+  <p id="userAgent"></p>
+  <p id="isWebview"></p>
+  <script>
+    function isWebview() {
+      var useragent = navigator.userAgent;
+      var rules = ['WebView','(iPhone|iPod|iPad)(?!.*Safari\/)','Android.*(wv|\.0\.0\.0)'];
+      var regex = new RegExp(`(${rules.join('|')})`, 'ig');
+      document.getElementById('userAgent').innerHTML = useragent
+      if( Boolean(useragent.match(regex) ){
+        document.getElementById('isWebview').innerHTML = "WebView True"
+      } else {
+        document.getElementById('isWebview').innerHTML = "WebView False"
+      }
+      return Boolean(useragent.match(regex));
+  }
+  isWebview()
+  </script>
 </body>
 </html>
