@@ -15,7 +15,7 @@
   <a id="urlLink" href="https://www.google.com" target="_blank">另開連結</a>
   <script>
     var referrerUrl = window.document.referrer
-    var websiteUrl = window.location
+    var websiteUrl = window.location.href
     document.getElementById('websiteUrl').innerHTML = 'websiteUrl: '+websiteUrl
     document.getElementById('referrer').innerHTML = 'referrer: '+referrerUrl
     function isWebview() {
