@@ -12,6 +12,7 @@
   <p id="isWebview"></p>
   <p id="websiteUrl"></p>
   <p id="referrer"></p>
+  <a href="">另開連結</a>
   <script>
     var referrerUrl = window.document.referrer
     var websiteUrl = window.location
@@ -37,7 +38,7 @@
     } else{
       translateUrl += '?openExternalBrowser=1'
     }
-    window.location.href =translateUrl
+    window.open(translateUrl)
   }
   </script>
 </body>
