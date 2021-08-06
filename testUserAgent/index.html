@@ -38,6 +38,7 @@
     } else{
       translateUrl += '?openExternalBrowser=1'
     }
+    parent.window.open(translateUrl)
     document.getElementById('urlLink').href = translateUrl
     document.getElementById('urlLink').innerHTML = translateUrl
   }
