@@ -13,8 +13,10 @@
   <p id="websiteUrl"></p>
   <p id="referrer"></p>
   <script>
-    document.getElementById('websiteUrl').innerHTML = 'websiteUrl: '+window.location
-    document.getElementById('referrer').innerHTML = 'referrer: '+window.document.referrer
+    var referrerUrl = window.document.referrer
+    var websiteUrl = window.location
+    document.getElementById('websiteUrl').innerHTML = 'websiteUrl: '+websiteUrl
+    document.getElementById('referrer').innerHTML = 'referrer: '+referrerUrl
     function isWebview() {
       var useragent = navigator.userAgent;
       var rules = ['WebView','(iPhone|iPod|iPad)(?!.*Safari\/)','Android.*(wv|\.0\.0\.0)'];
@@ -27,7 +29,16 @@
       }
       return Boolean(useragent.match(regex));
   }
-  isWebview()
+  if(isWebview()){
+
+    translateUrl = referrerUrl
+    if(translateUrl.indexOf('?')!== -1){
+      translateUrl += '&openExternalBrowser=1'
+    } else{
+      translateUrl += '?openExternalBrowser=1'
+    }
+    window.location.href =translateUrl
+  }
   </script>
 </body>
 </html>
