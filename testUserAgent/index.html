@@ -13,8 +13,8 @@
   <p id="websiteUrl"></p>
   <p id="referrer"></p>
   <script>
-    document.getElementById('websiteUrl').innerHTML = window.location
-    document.getElementById('referrer').innerHTML = window.document.referrer
+    document.getElementById('websiteUrl').innerHTML = 'websiteUrl: '+window.location
+    document.getElementById('referrer').innerHTML = 'referrer: '+window.document.referrer
     function isWebview() {
       var useragent = navigator.userAgent;
       var rules = ['WebView','(iPhone|iPod|iPad)(?!.*Safari\/)','Android.*(wv|\.0\.0\.0)'];
