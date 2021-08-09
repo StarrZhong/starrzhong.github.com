@@ -1,3 +1,7 @@
+axios.get('https://www.taiwanlottery.com.tw/Info/number/frequency.aspx?GAME=SL638').then((res)=>{
+  console.log(res)
+})
+
 let numbersInfo = {
   totalCount:0,
   area_a: [],
