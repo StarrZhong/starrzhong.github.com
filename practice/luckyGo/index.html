@@ -7,13 +7,53 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-
+    *{
+      box-sizing: border-box;
+    }
+    .container{
+      margin: 0 auto;
+      padding: 0 20px;
+      width: 100%;
+      max-width: 1200px;
+    }
+    .numberList{
+      padding-left: 0;
+      list-style: none;
+      display: flex;
+    }
+    .numberList li{
+      text-align: center;
+      width: 14.28%;
+      line-height: 2em;
+      border-style: solid;
+      border-width: 1px 0px 1px 1px;
+      border-color: gray;
+    }
+    .numberList li:last-child{
+      border-right-width:1px;
+      background-color: orange;
+      color: white;
+    }
+    
+    .startBtn{
+      cursor:pointer;
+      width: 200px;
+      line-height: 2em;
+      display: block;
+      margin: 20px auto;
+    }
   </style>
 </head>
 <body>
   <div id="app">
-    {{selectNumbers}}
-    {{specialNumber}}
+    <div class="container">
+      <h2>號碼清單</h2>
+      <ul class="numberList" v-for="item in selectNumbers">
+        <li v-for="n in item">{{n}}</li>
+      </ul>
+      <button class="startBtn" @click="GoSpecial()">開始</button>
+    </div>
+
   </div>
   <script src="https://unpkg.com/vue@3"></script>
   <script>
@@ -36,13 +76,27 @@
         selectNumbers.value.forEach(item => {
           console.log(item)
           if( item[6] !== null ){
-            const sIndex = specialNumber.value.indexOf(item[7])
+            const sIndex = specialNumber.value.indexOf(item[6])
             specialNumber.value.splice(sIndex,1)
           }
         })
+
+        function GoSpecial(){
+          while(specialNumber.value.length > 0){
+            selectNumbers.value.forEach(item=>{
+              if( item[6] === null ){
+                const rand = Math.ceil(Math.random()*specialNumber.value.length)
+                const sIndex = specialNumber.value.indexOf(rand)
+                const pick = specialNumber.value.splice(sIndex,1)
+                item[6] = pick[0]
+              }
+            })
+          }
+        }
         return {
           selectNumbers,
-          specialNumber
+          specialNumber,
+          GoSpecial
         }
       }
     })
