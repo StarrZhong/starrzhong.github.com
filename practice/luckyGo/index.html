@@ -35,7 +35,7 @@
         const specialNumber = ref([1,2,3,4,5,6,7,8])
         selectNumbers.value.forEach(item => {
           console.log(item)
-          if( item[7] !== null ){
+          if( item[6] !== null ){
             const sIndex = specialNumber.value.indexOf(item[7])
             specialNumber.value.splice(sIndex,1)
           }
