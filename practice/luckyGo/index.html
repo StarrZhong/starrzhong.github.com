@@ -72,22 +72,21 @@
             [6,7,9,21,31,37,null]
           ]
         )
-        const specialNumber = ref([1,2,3,4,5,6,7,8])
+        const specialNumber = [1,2,3,4,5,6,7,8]
         selectNumbers.value.forEach(item => {
-          console.log(item)
           if( item[6] !== null ){
-            const sIndex = specialNumber.value.indexOf(item[6])
-            specialNumber.value.splice(sIndex,1)
+            const sIndex = specialNumber.indexOf(item[6])
+            specialNumber.splice(sIndex,1)
           }
         })
 
         function GoSpecial(){
-          while(specialNumber.value.length > 0){
+          while(specialNumber.length > 0){
             selectNumbers.value.forEach(item=>{
               if( item[6] === null ){
-                const rand = Math.ceil(Math.random()*specialNumber.value.length)
-                const sIndex = specialNumber.value.indexOf(rand)
-                const pick = specialNumber.value.splice(sIndex,1)
+                const rand = Math.ceil(Math.random()*specialNumber.length)
+                const sIndex = specialNumber.indexOf(rand)
+                const pick = specialNumber.splice(sIndex,1)
                 item[6] = pick[0]
               }
             })
@@ -95,7 +94,6 @@
         }
         return {
           selectNumbers,
-          specialNumber,
           GoSpecial
         }
       }
