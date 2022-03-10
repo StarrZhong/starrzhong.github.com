@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>font-variant-numeric test</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    
+.element{
+  font-variant-numeric: slashed-zero;
+}
+.element2{
+  font-variant-numeric: normal;
+}
+.fontName{
+  margin-top: 0;
+}
+.box{
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid #666;
+  width: 200px;
+  height: 100px;
+  vertical-align: top;
+}
+.box1{
+  font-family: 'Helvetica';
+}
+.box2{
+  font-family: 'Arial';
+}
+.box3{
+  font-family: 'Noto Sans TC';
+}
+.box4{
+  font-family: 'Noto Sans';
+}
+.box5{
+  font-family: 'Microsoft JhengHei','微軟正黑體';
+}
+.box6{
+  font-family: 'PingFang TC','Heiti TC','LantingHei TC','LiHei Pro','微軟正黑體','Noto Sans TC','Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.box5{
+  font-family: 'Fira Sans';
+}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h3 class="fontName">什麼都沒設</h3>
+    <div class="element">1900O00O00</div>
+    <div class="element2">1900O00O00</div>
+  </div>
+  <div class="box box1">
+    <h3 class="fontName">Helvetica</h3>
+    <div class="element">1900O00O00</div>
+    <div class="element2">1900O00O00</div>
+  </div>
+  <div class="box box2">
+    <h3 class="fontName">Arial</h3>
+    <div class="element">1900O00O00</div>
+    <div class="element2">1900O00O00</div>
+  </div>
+  <div class="box box3">
+    <h3 class="fontName">Noto Sans TC</h3>
+    <div class="element">1900O00O00</div>
+    <div class="element2">1900O00O00</div>
+  </div>
+  <div class="box box4">
+    <h3 class="fontName">Noto Sans</h3>
+    <div class="element">1900O00O00</div>
+    <div class="element2">1900O00O00</div>
+  </div>
+  <div class="box box5">
+    <h3 class="fontName">微軟正黑體</h3>
+    <div class="element">1900O00O00</div>
+    <div class="element2">1900O00O00</div>
+  </div>
+  <div class="box box6">
+    <h3 class="fontName">隊長指定</h3>
+    <div class="element">1900O00O00</div>
+    <div class="element2">1900O00O00</div>
+  </div>
+  <div class="box box7">
+    <h3 class="fontName">Fira Sans</h3>
+    <div class="element">1900O00O00</div>
+    <div class="element2">1900O00O00</div>
+  </div>
+</body>
+</html>
