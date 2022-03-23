@@ -52,7 +52,8 @@
   z-index: 1;
 }
 
-.card-flip:hover .frontCard {
+.card-flip:hover .frontCard ,
+.card-flip:active .frontCard {
   -webkit-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
   -o-transform: rotateY(-180deg);
@@ -71,7 +72,8 @@
   z-index: 1;
 }
 
-.card-flip:hover .backCard {
+.card-flip:hover .backCard ,
+.card-flip:active .backCard {
   -webkit-transform: rotateY(0deg);
   -moz-transform: rotateY(0deg);
   -o-transform: rotateY(0deg);
@@ -158,7 +160,8 @@
   opacity: .7;
 }
 
-a.flip-button:hover {
+a.flip-button:hover ,
+a.flip-button:active {
   opacity: 1;
   color: #fff;
   text-decoration: none;
@@ -182,7 +185,8 @@ a.flip-button:hover {
   z-index: 2;
 }
 
-.card-flip:hover .card-container {
+.card-flip:hover .card-container ,
+.card-flip:active .card-container {
   -webkit-transform: translateY(-50%) translateX(-650px) scale(.88);
   -ms-transform: translateY(-50%) translateX(-650px) scale(.88);
   transform: translateY(-50%) translateX(-650px) scale(.88);
@@ -204,7 +208,8 @@ a.flip-button:hover {
   z-index: 2;
 }
 
-.card-flip:hover .card-container2 {
+.card-flip:hover .card-container2 ,
+.card-flip:active .card-container2 {
   -webkit-transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
   -ms-transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
   transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
@@ -236,7 +241,9 @@ a.flip-button:hover {
 }
 
 .card-flip:hover .frontCard .boxshadow,
-.card-flip:hover .frontCard .textshadow {
+.card-flip:active .frontCard .boxshadow,
+.card-flip:hover .frontCard .textshadow ,
+.card-flip:active .frontCard .textshadow {
   -webkit-box-shadow: 240px 42px 58px -8px rgba(0, 0, 0, 0.0);
   -moz-box-shadow: 240px 42px 58px -8px rgba(0, 0, 0, 0.0);
   box-shadow: 240px 42px 58px -8px rgba(0, 0, 0, 0.0);
@@ -254,7 +261,8 @@ a.flip-button:hover {
   text-shadow: 240px 42px 58px -8px rgba(0, 0, 0, 0.0);
 }
 
-.card-flip:hover .backCard .boxshadow {
+.card-flip:hover .backCard .boxshadow ,
+.card-flip:active .backCard .boxshadow {
   -webkit-box-shadow: 25px 25px 50px 0px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 25px 25px 50px 0px rgba(0, 0, 0, 0.8);
   box-shadow: 25px 25px 50px 0px rgba(0, 0, 0, 0.8);
