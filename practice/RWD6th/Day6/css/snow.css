@@ -1,0 +1,1147 @@
+html, body {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.stage {
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.snow {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-animation: snowing;
+          animation: snowing;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.snow:nth-child(1) {
+  left: 65.51412%;
+  width: 6px;
+  height: 6px;
+  opacity: 0.6;
+  -webkit-animation-duration: 8.33333s;
+          animation-duration: 8.33333s;
+  -webkit-animation-delay: -3.19424s;
+          animation-delay: -3.19424s;
+}
+
+.snow:nth-child(2) {
+  left: 28.57233%;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: -2.21013s;
+          animation-delay: -2.21013s;
+}
+
+.snow:nth-child(3) {
+  left: 57.55561%;
+  width: 3px;
+  height: 3px;
+  opacity: 0.3;
+  -webkit-animation-duration: 16.66667s;
+          animation-duration: 16.66667s;
+  -webkit-animation-delay: -0.97954s;
+          animation-delay: -0.97954s;
+}
+
+.snow:nth-child(4) {
+  left: 24.82209%;
+  width: 7px;
+  height: 7px;
+  opacity: 0.7;
+  -webkit-animation-duration: 7.14286s;
+          animation-duration: 7.14286s;
+  -webkit-animation-delay: -5.2193s;
+          animation-delay: -5.2193s;
+}
+
+.snow:nth-child(5) {
+  left: 56.40745%;
+  width: 9px;
+  height: 9px;
+  opacity: 0.9;
+  -webkit-animation-duration: 5.55556s;
+          animation-duration: 5.55556s;
+  -webkit-animation-delay: -5.36981s;
+          animation-delay: -5.36981s;
+}
+
+.snow:nth-child(6) {
+  left: 21.76229%;
+  width: 4px;
+  height: 4px;
+  opacity: 0.4;
+  -webkit-animation-duration: 12.5s;
+          animation-duration: 12.5s;
+  -webkit-animation-delay: -4.51298s;
+          animation-delay: -4.51298s;
+}
+
+.snow:nth-child(7) {
+  left: 25.98965%;
+  width: 6px;
+  height: 6px;
+  opacity: 0.6;
+  -webkit-animation-duration: 8.33333s;
+          animation-duration: 8.33333s;
+  -webkit-animation-delay: -9.45737s;
+          animation-delay: -9.45737s;
+}
+
+.snow:nth-child(8) {
+  left: 7.97239%;
+  width: 9px;
+  height: 9px;
+  opacity: 0.9;
+  -webkit-animation-duration: 5.55556s;
+          animation-duration: 5.55556s;
+  -webkit-animation-delay: -5.57795s;
+          animation-delay: -5.57795s;
+}
+
+.snow:nth-child(9) {
+  left: 25.45895%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -3.76342s;
+          animation-delay: -3.76342s;
+}
+
+.snow:nth-child(10) {
+  left: 61.71995%;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: -2.76767s;
+          animation-delay: -2.76767s;
+}
+
+.snow:nth-child(11) {
+  left: 24.58502%;
+  width: 3px;
+  height: 3px;
+  opacity: 0.3;
+  -webkit-animation-duration: 16.66667s;
+          animation-duration: 16.66667s;
+  -webkit-animation-delay: -6.11266s;
+          animation-delay: -6.11266s;
+}
+
+.snow:nth-child(12) {
+  left: 68.94382%;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: -3.54303s;
+          animation-delay: -3.54303s;
+}
+
+.snow:nth-child(13) {
+  left: 30.02906%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -7.32829s;
+          animation-delay: -7.32829s;
+}
+
+.snow:nth-child(14) {
+  left: 30.77872%;
+  width: 3px;
+  height: 3px;
+  opacity: 0.3;
+  -webkit-animation-duration: 16.66667s;
+          animation-duration: 16.66667s;
+  -webkit-animation-delay: -5.09856s;
+          animation-delay: -5.09856s;
+}
+
+.snow:nth-child(15) {
+  left: 82.7311%;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  -webkit-animation-duration: 6.25s;
+          animation-duration: 6.25s;
+  -webkit-animation-delay: -5.46063s;
+          animation-delay: -5.46063s;
+}
+
+.snow:nth-child(16) {
+  left: 25.87512%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -9.3656s;
+          animation-delay: -9.3656s;
+}
+
+.snow:nth-child(17) {
+  left: 27.03016%;
+  width: 9px;
+  height: 9px;
+  opacity: 0.9;
+  -webkit-animation-duration: 5.55556s;
+          animation-duration: 5.55556s;
+  -webkit-animation-delay: -4.39239s;
+          animation-delay: -4.39239s;
+}
+
+.snow:nth-child(18) {
+  left: 17.08818%;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: -9.94008s;
+          animation-delay: -9.94008s;
+}
+
+.snow:nth-child(19) {
+  left: 93.03989%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -6.88381s;
+          animation-delay: -6.88381s;
+}
+
+.snow:nth-child(20) {
+  left: 30.33076%;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: -1.69767s;
+          animation-delay: -1.69767s;
+}
+
+.snow:nth-child(21) {
+  left: 82.55043%;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  -webkit-animation-duration: 6.25s;
+          animation-duration: 6.25s;
+  -webkit-animation-delay: -1.95524s;
+          animation-delay: -1.95524s;
+}
+
+.snow:nth-child(22) {
+  left: 36.35361%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -7.4881s;
+          animation-delay: -7.4881s;
+}
+
+.snow:nth-child(23) {
+  left: 51.106%;
+  width: 4px;
+  height: 4px;
+  opacity: 0.4;
+  -webkit-animation-duration: 12.5s;
+          animation-duration: 12.5s;
+  -webkit-animation-delay: -8.51597s;
+          animation-delay: -8.51597s;
+}
+
+.snow:nth-child(24) {
+  left: 61.45081%;
+  width: 6px;
+  height: 6px;
+  opacity: 0.6;
+  -webkit-animation-duration: 8.33333s;
+          animation-duration: 8.33333s;
+  -webkit-animation-delay: -9.6347s;
+          animation-delay: -9.6347s;
+}
+
+.snow:nth-child(25) {
+  left: 42.25389%;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: -4.78329s;
+          animation-delay: -4.78329s;
+}
+
+.snow:nth-child(26) {
+  left: 21.27338%;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  -webkit-animation-duration: 6.25s;
+          animation-duration: 6.25s;
+  -webkit-animation-delay: -0.28372s;
+          animation-delay: -0.28372s;
+}
+
+.snow:nth-child(27) {
+  left: 22.66988%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -2.79925s;
+          animation-delay: -2.79925s;
+}
+
+.snow:nth-child(28) {
+  left: 67.1799%;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  -webkit-animation-duration: 6.25s;
+          animation-duration: 6.25s;
+  -webkit-animation-delay: -6.88023s;
+          animation-delay: -6.88023s;
+}
+
+.snow:nth-child(29) {
+  left: 73.2241%;
+  width: 7px;
+  height: 7px;
+  opacity: 0.7;
+  -webkit-animation-duration: 7.14286s;
+          animation-duration: 7.14286s;
+  -webkit-animation-delay: -8.9225s;
+          animation-delay: -8.9225s;
+}
+
+.snow:nth-child(30) {
+  left: 29.71837%;
+  width: 4px;
+  height: 4px;
+  opacity: 0.4;
+  -webkit-animation-duration: 12.5s;
+          animation-duration: 12.5s;
+  -webkit-animation-delay: -2.61355s;
+          animation-delay: -2.61355s;
+}
+
+.snow:nth-child(31) {
+  left: 38.49584%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -2.27782s;
+          animation-delay: -2.27782s;
+}
+
+.snow:nth-child(32) {
+  left: 95.87493%;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: -9.35852s;
+          animation-delay: -9.35852s;
+}
+
+.snow:nth-child(33) {
+  left: 75.87137%;
+  width: 3px;
+  height: 3px;
+  opacity: 0.3;
+  -webkit-animation-duration: 16.66667s;
+          animation-duration: 16.66667s;
+  -webkit-animation-delay: -1.94854s;
+          animation-delay: -1.94854s;
+}
+
+.snow:nth-child(34) {
+  left: 32.779%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -2.80224s;
+          animation-delay: -2.80224s;
+}
+
+.snow:nth-child(35) {
+  left: 41.38864%;
+  width: 9px;
+  height: 9px;
+  opacity: 0.9;
+  -webkit-animation-duration: 5.55556s;
+          animation-duration: 5.55556s;
+  -webkit-animation-delay: -3.29422s;
+          animation-delay: -3.29422s;
+}
+
+.snow:nth-child(36) {
+  left: 95.54504%;
+  width: 7px;
+  height: 7px;
+  opacity: 0.7;
+  -webkit-animation-duration: 7.14286s;
+          animation-duration: 7.14286s;
+  -webkit-animation-delay: -9.52281s;
+          animation-delay: -9.52281s;
+}
+
+.snow:nth-child(37) {
+  left: 5.79298%;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  -webkit-animation-duration: 6.25s;
+          animation-duration: 6.25s;
+  -webkit-animation-delay: -3.83815s;
+          animation-delay: -3.83815s;
+}
+
+.snow:nth-child(38) {
+  left: 9.4692%;
+  width: 6px;
+  height: 6px;
+  opacity: 0.6;
+  -webkit-animation-duration: 8.33333s;
+          animation-duration: 8.33333s;
+  -webkit-animation-delay: -6.105s;
+          animation-delay: -6.105s;
+}
+
+.snow:nth-child(39) {
+  left: 39.76722%;
+  width: 3px;
+  height: 3px;
+  opacity: 0.3;
+  -webkit-animation-duration: 16.66667s;
+          animation-duration: 16.66667s;
+  -webkit-animation-delay: -0.98112s;
+          animation-delay: -0.98112s;
+}
+
+.snow:nth-child(40) {
+  left: 51.95503%;
+  width: 9px;
+  height: 9px;
+  opacity: 0.9;
+  -webkit-animation-duration: 5.55556s;
+          animation-duration: 5.55556s;
+  -webkit-animation-delay: -6.54013s;
+          animation-delay: -6.54013s;
+}
+
+.snow:nth-child(41) {
+  left: 47.44799%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -9.74705s;
+          animation-delay: -9.74705s;
+}
+
+.snow:nth-child(42) {
+  left: 81.09628%;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  -webkit-animation-duration: 6.25s;
+          animation-duration: 6.25s;
+  -webkit-animation-delay: -3.78873s;
+          animation-delay: -3.78873s;
+}
+
+.snow:nth-child(43) {
+  left: 32.63367%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -4.15755s;
+          animation-delay: -4.15755s;
+}
+
+.snow:nth-child(44) {
+  left: 44.20157%;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: -7.95001s;
+          animation-delay: -7.95001s;
+}
+
+.snow:nth-child(45) {
+  left: 68.53931%;
+  width: 3px;
+  height: 3px;
+  opacity: 0.3;
+  -webkit-animation-duration: 16.66667s;
+          animation-duration: 16.66667s;
+  -webkit-animation-delay: -0.37929s;
+          animation-delay: -0.37929s;
+}
+
+.snow:nth-child(46) {
+  left: 59.83432%;
+  width: 9px;
+  height: 9px;
+  opacity: 0.9;
+  -webkit-animation-duration: 5.55556s;
+          animation-duration: 5.55556s;
+  -webkit-animation-delay: -4.2667s;
+          animation-delay: -4.2667s;
+}
+
+.snow:nth-child(47) {
+  left: 35.8352%;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  -webkit-animation-duration: 6.25s;
+          animation-duration: 6.25s;
+  -webkit-animation-delay: -3.89775s;
+          animation-delay: -3.89775s;
+}
+
+.snow:nth-child(48) {
+  left: 26.18355%;
+  width: 3px;
+  height: 3px;
+  opacity: 0.3;
+  -webkit-animation-duration: 16.66667s;
+          animation-duration: 16.66667s;
+  -webkit-animation-delay: -2.74335s;
+          animation-delay: -2.74335s;
+}
+
+.snow:nth-child(49) {
+  left: 9.98743%;
+  width: 4px;
+  height: 4px;
+  opacity: 0.4;
+  -webkit-animation-duration: 12.5s;
+          animation-duration: 12.5s;
+  -webkit-animation-delay: -0.1286s;
+          animation-delay: -0.1286s;
+}
+
+.snow:nth-child(50) {
+  left: 18.18202%;
+  width: 6px;
+  height: 6px;
+  opacity: 0.6;
+  -webkit-animation-duration: 8.33333s;
+          animation-duration: 8.33333s;
+  -webkit-animation-delay: -5.63431s;
+          animation-delay: -5.63431s;
+}
+
+.snow:nth-child(51) {
+  left: 23.84179%;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  -webkit-animation-duration: 6.25s;
+          animation-duration: 6.25s;
+  -webkit-animation-delay: -3.10253s;
+          animation-delay: -3.10253s;
+}
+
+.snow:nth-child(52) {
+  left: 29.39581%;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  -webkit-animation-duration: 6.25s;
+          animation-duration: 6.25s;
+  -webkit-animation-delay: -7.09294s;
+          animation-delay: -7.09294s;
+}
+
+.snow:nth-child(53) {
+  left: 52.98926%;
+  width: 4px;
+  height: 4px;
+  opacity: 0.4;
+  -webkit-animation-duration: 12.5s;
+          animation-duration: 12.5s;
+  -webkit-animation-delay: -2.753s;
+          animation-delay: -2.753s;
+}
+
+.snow:nth-child(54) {
+  left: 2.24999%;
+  width: 4px;
+  height: 4px;
+  opacity: 0.4;
+  -webkit-animation-duration: 12.5s;
+          animation-duration: 12.5s;
+  -webkit-animation-delay: -5.1487s;
+          animation-delay: -5.1487s;
+}
+
+.snow:nth-child(55) {
+  left: 77.12184%;
+  width: 9px;
+  height: 9px;
+  opacity: 0.9;
+  -webkit-animation-duration: 5.55556s;
+          animation-duration: 5.55556s;
+  -webkit-animation-delay: -4.50157s;
+          animation-delay: -4.50157s;
+}
+
+.snow:nth-child(56) {
+  left: 60.78042%;
+  width: 4px;
+  height: 4px;
+  opacity: 0.4;
+  -webkit-animation-duration: 12.5s;
+          animation-duration: 12.5s;
+  -webkit-animation-delay: -3.06329s;
+          animation-delay: -3.06329s;
+}
+
+.snow:nth-child(57) {
+  left: 96.20915%;
+  width: 9px;
+  height: 9px;
+  opacity: 0.9;
+  -webkit-animation-duration: 5.55556s;
+          animation-duration: 5.55556s;
+  -webkit-animation-delay: -0.0144s;
+          animation-delay: -0.0144s;
+}
+
+.snow:nth-child(58) {
+  left: 53.64347%;
+  width: 6px;
+  height: 6px;
+  opacity: 0.6;
+  -webkit-animation-duration: 8.33333s;
+          animation-duration: 8.33333s;
+  -webkit-animation-delay: -0.70133s;
+          animation-delay: -0.70133s;
+}
+
+.snow:nth-child(59) {
+  left: 89.64458%;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  -webkit-animation-duration: 6.25s;
+          animation-duration: 6.25s;
+  -webkit-animation-delay: -8.81218s;
+          animation-delay: -8.81218s;
+}
+
+.snow:nth-child(60) {
+  left: 42.58388%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -8.95726s;
+          animation-delay: -8.95726s;
+}
+
+.snow:nth-child(61) {
+  left: 35.28017%;
+  width: 3px;
+  height: 3px;
+  opacity: 0.3;
+  -webkit-animation-duration: 16.66667s;
+          animation-duration: 16.66667s;
+  -webkit-animation-delay: -2.32914s;
+          animation-delay: -2.32914s;
+}
+
+.snow:nth-child(62) {
+  left: 59.20392%;
+  width: 6px;
+  height: 6px;
+  opacity: 0.6;
+  -webkit-animation-duration: 8.33333s;
+          animation-duration: 8.33333s;
+  -webkit-animation-delay: -6.50816s;
+          animation-delay: -6.50816s;
+}
+
+.snow:nth-child(63) {
+  left: 75.21686%;
+  width: 6px;
+  height: 6px;
+  opacity: 0.6;
+  -webkit-animation-duration: 8.33333s;
+          animation-duration: 8.33333s;
+  -webkit-animation-delay: -8.17989s;
+          animation-delay: -8.17989s;
+}
+
+.snow:nth-child(64) {
+  left: 3.96687%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -1.39897s;
+          animation-delay: -1.39897s;
+}
+
+.snow:nth-child(65) {
+  left: 43.88423%;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  -webkit-animation-duration: 6.25s;
+          animation-duration: 6.25s;
+  -webkit-animation-delay: -1.5577s;
+          animation-delay: -1.5577s;
+}
+
+.snow:nth-child(66) {
+  left: 42.58078%;
+  width: 6px;
+  height: 6px;
+  opacity: 0.6;
+  -webkit-animation-duration: 8.33333s;
+          animation-duration: 8.33333s;
+  -webkit-animation-delay: -7.34886s;
+          animation-delay: -7.34886s;
+}
+
+.snow:nth-child(67) {
+  left: 97.60237%;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  -webkit-animation-duration: 6.25s;
+          animation-duration: 6.25s;
+  -webkit-animation-delay: -2.70612s;
+          animation-delay: -2.70612s;
+}
+
+.snow:nth-child(68) {
+  left: 95.22108%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -8.32108s;
+          animation-delay: -8.32108s;
+}
+
+.snow:nth-child(69) {
+  left: 73.82895%;
+  width: 3px;
+  height: 3px;
+  opacity: 0.3;
+  -webkit-animation-duration: 16.66667s;
+          animation-duration: 16.66667s;
+  -webkit-animation-delay: -2.99997s;
+          animation-delay: -2.99997s;
+}
+
+.snow:nth-child(70) {
+  left: 13.3571%;
+  width: 7px;
+  height: 7px;
+  opacity: 0.7;
+  -webkit-animation-duration: 7.14286s;
+          animation-duration: 7.14286s;
+  -webkit-animation-delay: -3.79023s;
+          animation-delay: -3.79023s;
+}
+
+.snow:nth-child(71) {
+  left: 23.3048%;
+  width: 7px;
+  height: 7px;
+  opacity: 0.7;
+  -webkit-animation-duration: 7.14286s;
+          animation-duration: 7.14286s;
+  -webkit-animation-delay: -2.05248s;
+          animation-delay: -2.05248s;
+}
+
+.snow:nth-child(72) {
+  left: 24.59548%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -6.48283s;
+          animation-delay: -6.48283s;
+}
+
+.snow:nth-child(73) {
+  left: 36.9589%;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  -webkit-animation-duration: 6.25s;
+          animation-duration: 6.25s;
+  -webkit-animation-delay: -1.8788s;
+          animation-delay: -1.8788s;
+}
+
+.snow:nth-child(74) {
+  left: 23.30048%;
+  width: 7px;
+  height: 7px;
+  opacity: 0.7;
+  -webkit-animation-duration: 7.14286s;
+          animation-duration: 7.14286s;
+  -webkit-animation-delay: -4.50025s;
+          animation-delay: -4.50025s;
+}
+
+.snow:nth-child(75) {
+  left: 61.99592%;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: -2.20118s;
+          animation-delay: -2.20118s;
+}
+
+.snow:nth-child(76) {
+  left: 12.44084%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -9.08618s;
+          animation-delay: -9.08618s;
+}
+
+.snow:nth-child(77) {
+  left: 33.1342%;
+  width: 3px;
+  height: 3px;
+  opacity: 0.3;
+  -webkit-animation-duration: 16.66667s;
+          animation-duration: 16.66667s;
+  -webkit-animation-delay: -8.90823s;
+          animation-delay: -8.90823s;
+}
+
+.snow:nth-child(78) {
+  left: 36.6198%;
+  width: 3px;
+  height: 3px;
+  opacity: 0.3;
+  -webkit-animation-duration: 16.66667s;
+          animation-duration: 16.66667s;
+  -webkit-animation-delay: -0.60649s;
+          animation-delay: -0.60649s;
+}
+
+.snow:nth-child(79) {
+  left: 26.96579%;
+  width: 6px;
+  height: 6px;
+  opacity: 0.6;
+  -webkit-animation-duration: 8.33333s;
+          animation-duration: 8.33333s;
+  -webkit-animation-delay: -5.90389s;
+          animation-delay: -5.90389s;
+}
+
+.snow:nth-child(80) {
+  left: 43.58963%;
+  width: 9px;
+  height: 9px;
+  opacity: 0.9;
+  -webkit-animation-duration: 5.55556s;
+          animation-duration: 5.55556s;
+  -webkit-animation-delay: -3.70421s;
+          animation-delay: -3.70421s;
+}
+
+.snow:nth-child(81) {
+  left: 80.72381%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -1.51587s;
+          animation-delay: -1.51587s;
+}
+
+.snow:nth-child(82) {
+  left: 56.59186%;
+  width: 9px;
+  height: 9px;
+  opacity: 0.9;
+  -webkit-animation-duration: 5.55556s;
+          animation-duration: 5.55556s;
+  -webkit-animation-delay: -8.45053s;
+          animation-delay: -8.45053s;
+}
+
+.snow:nth-child(83) {
+  left: 58.73343%;
+  width: 7px;
+  height: 7px;
+  opacity: 0.7;
+  -webkit-animation-duration: 7.14286s;
+          animation-duration: 7.14286s;
+  -webkit-animation-delay: -4.01056s;
+          animation-delay: -4.01056s;
+}
+
+.snow:nth-child(84) {
+  left: 9.42614%;
+  width: 6px;
+  height: 6px;
+  opacity: 0.6;
+  -webkit-animation-duration: 8.33333s;
+          animation-duration: 8.33333s;
+  -webkit-animation-delay: -4.7683s;
+          animation-delay: -4.7683s;
+}
+
+.snow:nth-child(85) {
+  left: 90.91985%;
+  width: 3px;
+  height: 3px;
+  opacity: 0.3;
+  -webkit-animation-duration: 16.66667s;
+          animation-duration: 16.66667s;
+  -webkit-animation-delay: -7.41245s;
+          animation-delay: -7.41245s;
+}
+
+.snow:nth-child(86) {
+  left: 21.98957%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -9.69579s;
+          animation-delay: -9.69579s;
+}
+
+.snow:nth-child(87) {
+  left: 10.79804%;
+  width: 6px;
+  height: 6px;
+  opacity: 0.6;
+  -webkit-animation-duration: 8.33333s;
+          animation-duration: 8.33333s;
+  -webkit-animation-delay: -3.90806s;
+          animation-delay: -3.90806s;
+}
+
+.snow:nth-child(88) {
+  left: 37.3994%;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  -webkit-animation-duration: 6.25s;
+          animation-duration: 6.25s;
+  -webkit-animation-delay: -9.98949s;
+          animation-delay: -9.98949s;
+}
+
+.snow:nth-child(89) {
+  left: 23.37675%;
+  width: 3px;
+  height: 3px;
+  opacity: 0.3;
+  -webkit-animation-duration: 16.66667s;
+          animation-duration: 16.66667s;
+  -webkit-animation-delay: -8.09263s;
+          animation-delay: -8.09263s;
+}
+
+.snow:nth-child(90) {
+  left: 47.68147%;
+  width: 4px;
+  height: 4px;
+  opacity: 0.4;
+  -webkit-animation-duration: 12.5s;
+          animation-duration: 12.5s;
+  -webkit-animation-delay: -5.32586s;
+          animation-delay: -5.32586s;
+}
+
+.snow:nth-child(91) {
+  left: 6.60318%;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: -2.59348s;
+          animation-delay: -2.59348s;
+}
+
+.snow:nth-child(92) {
+  left: 4.31534%;
+  width: 3px;
+  height: 3px;
+  opacity: 0.3;
+  -webkit-animation-duration: 16.66667s;
+          animation-duration: 16.66667s;
+  -webkit-animation-delay: -9.2063s;
+          animation-delay: -9.2063s;
+}
+
+.snow:nth-child(93) {
+  left: 76.60683%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: -3.99964s;
+          animation-delay: -3.99964s;
+}
+
+.snow:nth-child(94) {
+  left: 70.59013%;
+  width: 7px;
+  height: 7px;
+  opacity: 0.7;
+  -webkit-animation-duration: 7.14286s;
+          animation-duration: 7.14286s;
+  -webkit-animation-delay: -1.77799s;
+          animation-delay: -1.77799s;
+}
+
+.snow:nth-child(95) {
+  left: 34.23961%;
+  width: 6px;
+  height: 6px;
+  opacity: 0.6;
+  -webkit-animation-duration: 8.33333s;
+          animation-duration: 8.33333s;
+  -webkit-animation-delay: -6.37925s;
+          animation-delay: -6.37925s;
+}
+
+.snow:nth-child(96) {
+  left: 26.73851%;
+  width: 4px;
+  height: 4px;
+  opacity: 0.4;
+  -webkit-animation-duration: 12.5s;
+          animation-duration: 12.5s;
+  -webkit-animation-delay: -4.15455s;
+          animation-delay: -4.15455s;
+}
+
+.snow:nth-child(97) {
+  left: 17.66093%;
+  width: 4px;
+  height: 4px;
+  opacity: 0.4;
+  -webkit-animation-duration: 12.5s;
+          animation-duration: 12.5s;
+  -webkit-animation-delay: -5.31113s;
+          animation-delay: -5.31113s;
+}
+
+.snow:nth-child(98) {
+  left: 89.52692%;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  -webkit-animation-duration: 6.25s;
+          animation-duration: 6.25s;
+  -webkit-animation-delay: -0.73592s;
+          animation-delay: -0.73592s;
+}
+
+.snow:nth-child(99) {
+  left: 24.65244%;
+  width: 7px;
+  height: 7px;
+  opacity: 0.7;
+  -webkit-animation-duration: 7.14286s;
+          animation-duration: 7.14286s;
+  -webkit-animation-delay: -6.27503s;
+          animation-delay: -6.27503s;
+}
+
+.snow:nth-child(100) {
+  left: 0.00922%;
+  width: 9px;
+  height: 9px;
+  opacity: 0.9;
+  -webkit-animation-duration: 5.55556s;
+          animation-duration: 5.55556s;
+  -webkit-animation-delay: -8.1832s;
+          animation-delay: -8.1832s;
+}
+
+@-webkit-keyframes snowing {
+  0% {
+    top: -10px;
+  }
+  50% {
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes snowing {
+  0% {
+    top: -10px;
+  }
+  50% {
+  }
+  100% {
+    top: 100%;
+  }
+}
+/*# sourceMappingURL=snow.css.map */

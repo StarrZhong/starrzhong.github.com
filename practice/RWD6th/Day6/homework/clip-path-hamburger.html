@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <title>Document</title>
+  <style>
+    .control-check{
+      display: none;
+    }
+    .container{
+      max-width: 1200px;
+      padding: 0 20px;
+      margin: 0 auto;
+    }
+    .triangle{
+      width: 300px;
+      height: 300px;
+      margin-bottom: 20px;
+      background-color: #F00;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+    .triangle:hover{
+      animation: move 2s forwards;
+    }
+    @keyframes move{
+      0%{
+        clip-path: polygon(50% 0%, 0% 100% ,100% 100%);
+      }
+      100%{
+        clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+      }
+    }
+    
+    .hamburger-12pointer,.hamburger-12pointer-cross,.hamburger-16pointer, .hamburger-16pointer-cross{
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      margin-right: 10px;  
+    }
+    .hamburger-12pointer span, .hamburger-12pointer-cross span, .hamburger-16pointer span, .hamburger-16pointer-cross span{
+      display: block;
+      height: 100%;
+      background: #F00;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-direction: alternate;
+    }
+    .hamburger-12pointer span{
+      animation-name: hb12Move-back;
+    }
+    .hamburger-12pointer-cross span{
+      animation-name: hb12Move-cross-back;
+    }
+    #menu-control:checked ~ .hamburger-group .hamburger-12pointer span{
+      animation-name: hb12Move;
+    }
+    #menu-control:checked ~ .hamburger-group .hamburger-12pointer-cross span{
+      animation-name: hb12Move-cross;
+    }
+    @keyframes hb12Move{
+      0%{
+        clip-path: polygon(0% 60%, 0% 40%, 100% 40%, 100% 20%, 0% 20%, 0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%, 100% 80%, 100% 60%);
+      }
+      100%{
+        clip-path: polygon(0% 20%, 20% 0%, 50% 30%, 80% 0%, 100% 20%, 70% 50%, 100% 80%,80% 100%, 50% 70%, 20% 100%, 0% 80%,30% 50%);
+      }
+    }
+    @keyframes hb12Move-back{
+      0%{
+        clip-path: polygon(0% 20%, 20% 0%, 50% 30%, 80% 0%, 100% 20%, 70% 50%, 100% 80%,80% 100%, 50% 70%, 20% 100%, 0% 80%,30% 50%);
+      }
+      100%{
+        clip-path: polygon(0% 60%, 0% 40%, 100% 40%, 100% 20%, 0% 20%, 0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%, 100% 80%, 100% 60%);
+      }
+    }
+    @keyframes hb12Move-cross{
+      0%{
+        clip-path: polygon(0% 60%, 0% 40%, 100% 40%, 100% 20%, 0% 20%, 0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%, 100% 80%, 100% 60%);
+      }
+      50%{
+        clip-path: polygon(0% 60%, 0% 40%, 40% 40%, 40% 0%, 60% 0%, 60% 40%, 100% 40%, 100% 60%, 60% 60%, 60% 100%,40% 100%,40% 60%);
+      }
+      100%{
+        clip-path: polygon(0% 20%, 20% 0%, 50% 30%, 80% 0%, 100% 20%, 70% 50%, 100% 80%,80% 100%, 50% 70%, 20% 100%, 0% 80%,30% 50%);
+      }
+    }
+    @keyframes hb12Move-cross-back{
+      0%{
+        clip-path: polygon(0% 20%, 20% 0%, 50% 30%, 80% 0%, 100% 20%, 70% 50%, 100% 80%,80% 100%, 50% 70%, 20% 100%, 0% 80%,30% 50%);
+      }
+      50%{
+        clip-path: polygon(0% 60%, 0% 40%, 40% 40%, 40% 0%, 60% 0%, 60% 40%, 100% 40%, 100% 60%, 60% 60%, 60% 100%,40% 100%,40% 60%);
+      }
+      100%{
+        clip-path: polygon(0% 60%, 0% 40%, 100% 40%, 100% 20%, 0% 20%, 0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%, 100% 80%, 100% 60%);
+      }
+    } 
+    .hamburger-16pointer{
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      margin-right: 10px;  
+    }
+
+    .hamburger-16pointer span{
+      animation-name:hb16Move-back;
+    }
+    .hamburger-16pointer-cross span{
+      animation-name:hb16Move-cross-back;
+    }
+    #menu-control:checked ~ .hamburger-group .hamburger-16pointer span{
+      animation-name: hb16Move;
+    }
+    #menu-control:checked ~ .hamburger-group .hamburger-16pointer-cross span{
+      animation-name: hb16Move-cross;
+    }
+    @keyframes hb16Move{
+      0%{
+        clip-path: polygon(0% 0%,100% 0%, 100% 20%,50% 20%, 50% 40%, 100% 40%, 100% 60%, 50% 60%, 50% 80%, 100% 80%, 100% 100%, 0% 100%, 0% 80%, 50% 80%, 50% 60%, 0% 60%, 0% 40%, 50% 40%, 50% 20%, 0% 20%);
+      }
+      100%{
+        clip-path: polygon(0% 20%, 20% 0%, 50% 30%, 50% 30%, 50% 30%, 80% 0%, 100% 20%, 70% 50%, 70% 50%, 70% 50%, 100% 80%, 80% 100%, 50% 70%, 50% 70%, 50% 70%, 20% 100%, 0% 80%, 30% 50%, 30% 50%, 30% 50%);
+      }
+    }
+    @keyframes hb16Move-back{
+      0%{
+        clip-path: polygon(0% 20%, 20% 0%, 50% 30%, 50% 30%, 50% 30%, 80% 0%, 100% 20%, 70% 50%, 70% 50%, 70% 50%, 100% 80%, 80% 100%, 50% 70%, 50% 70%, 50% 70%, 20% 100%, 0% 80%, 30% 50%, 30% 50%, 30% 50%);
+      }
+      100%{
+        clip-path: polygon(0% 0%,100% 0%, 100% 20%,50% 20%, 50% 40%, 100% 40%, 100% 60%, 50% 60%, 50% 80%, 100% 80%, 100% 100%, 0% 100%, 0% 80%, 50% 80%, 50% 60%, 0% 60%, 0% 40%, 50% 40%, 50% 20%, 0% 20%);
+        
+      }
+    }
+    @keyframes hb16Move-cross{
+      0%{
+        clip-path: polygon(0% 0%,100% 0%, 100% 20%,50% 20%, 50% 40%, 100% 40%, 100% 60%, 50% 60%, 50% 80%, 100% 80%, 100% 100%, 0% 100%, 0% 80%, 50% 80%, 50% 60%, 0% 60%, 0% 40%, 50% 40%, 50% 20%, 0% 20%);
+      }
+      50%{
+        clip-path: polygon(40% 0%, 60% 0%, 60% 40%, 60% 40%, 60% 40%, 100% 40%, 100% 60%, 60% 60%, 60% 60%, 60% 60%, 60% 100%, 40% 100%, 40% 60%, 40% 60%, 40% 60%, 0% 60%, 0% 40%, 40% 40%, 40% 40%, 40% 40%);
+      }
+      100%{
+        clip-path: polygon(0% 20%, 20% 0%, 50% 30%, 50% 30%, 50% 30%, 80% 0%, 100% 20%, 70% 50%, 70% 50%, 70% 50%, 100% 80%, 80% 100%, 50% 70%, 50% 70%, 50% 70%, 20% 100%, 0% 80%, 30% 50%, 30% 50%, 30% 50%);
+      }
+    }
+    @keyframes hb16Move-cross-back{
+      0%{
+        clip-path: polygon(0% 20%, 20% 0%, 50% 30%, 50% 30%, 50% 30%, 80% 0%, 100% 20%, 70% 50%, 70% 50%, 70% 50%, 100% 80%, 80% 100%, 50% 70%, 50% 70%, 50% 70%, 20% 100%, 0% 80%, 30% 50%, 30% 50%, 30% 50%);
+      }
+      50%{
+        clip-path: polygon(40% 0%, 60% 0%, 60% 40%, 60% 40%, 60% 40%, 100% 40%, 100% 60%, 60% 60%, 60% 60%, 60% 60%, 60% 100%, 40% 100%, 40% 60%, 40% 60%, 40% 60%, 0% 60%, 0% 40%, 40% 40%, 40% 40%, 40% 40%);
+      }
+      100%{
+        clip-path: polygon(0% 0%,100% 0%, 100% 20%,50% 20%, 50% 40%, 100% 40%, 100% 60%, 50% 60%, 50% 80%, 100% 80%, 100% 100%, 0% 100%, 0% 80%, 50% 80%, 50% 60%, 0% 60%, 0% 40%, 50% 40%, 50% 20%, 0% 20%);
+        
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="triangle"></div>
+    <input class="control-check" type="checkbox" name="" id="menu-control">
+    <div class="hamburger-group">
+      <label class="hamburger-12pointer" for="menu-control">
+        <span></span>
+      </label>
+      <label class="hamburger-12pointer-cross" for="menu-control">
+        <span></span>
+      </label>
+      <label class="hamburger-16pointer" for="menu-control">
+        <span></span>
+      </label>
+      <label class="hamburger-16pointer-cross" for="menu-control">
+        <span></span>
+      </label>
+    </div>
+  </div>
+  <script>
+    console.log('0% 0%,100% 0%, 100% 20%,50% 20%, 50% 40%, 100% 40%, 100% 60%, 50% 60%, 50% 80%, 100% 80%, 100% 100%, 0% 100%, 0% 80%, 50% 80%, 50% 60%, 0% 60%, 0% 40%, 50% 40%, 50% 20%, 0% 20%'.split(','))
+  </script>
+</body>
+</html>

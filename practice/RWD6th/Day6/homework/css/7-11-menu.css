@@ -1,0 +1,32 @@
+.icon{
+  display: inline-block;
+  width: 1rem;
+  background-color: #CCC;
+}
+.icon::before{
+  content: '';
+  display: block;
+  background-image: url('../images/7-11/icon.png');
+  background-repeat: no-repeat;
+  background-size: 554.16%;
+  aspect-ratio: 1/1;
+}
+.icon--fb::before{
+  background-position: 0 0;
+}
+.icon--fb-w::before {
+  background-position: -1% 33.5862%;
+}
+.icon--ig::before{
+  background-position: 33.89% 0;
+}
+.icon--ig-w::before{
+  background-position: 27% 34.5%;
+}
+.icon--map::before{
+  /* -62px -32px */
+  background-position: 54.616% 34.5%;
+}
+.icon--earth::before{
+  background-position: 81.616% 34.5%;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <style>
+    .bigBox{
+      width: 640px;
+      height: 640px;
+    }
+    .box{
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+      background-color: #ccc;
+      position: relative;
+      font-size: 1rem;
+      box-shadow: 3px 3px 5px #0008;
+    }
+    .bigBox:hover .box2{
+      animation-name: move;
+      animation-duration: .5s;
+      animation-delay: -.3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+    }
+    @keyframes move {
+      0%{
+        
+        transform: rotateZ(0deg) translateY(0px);
+      }
+      70%{
+        font-size: 1rem;
+        transform: rotateZ(10deg) translateY(-20px);
+      }
+      85%{
+        transform: rotateZ(-10deg) translateY(-20px);
+      }
+      100%{
+        font-size: 5rem;
+        transform: rotateZ(10deg) translateY(-20px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bigBox">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+  </div>
+</body>
+</html>
