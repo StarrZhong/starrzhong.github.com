@@ -11,88 +11,122 @@
 </head>
 <body>
   <div class="wrapper">
+    <input type="checkbox" class="checkboxControl" id="headerMenuControl">
     <header class="header">
-      <label class="hamburger">
+      <label class="hamburger" for="headerMenuControl">
         <span></span>
       </label>
       <div class="headerMain">
         <div class="logo">
           <img src="images/7-11/logo.png">
         </div>
-        <div class="headerNav">
-          <nav>
-            <ul class="headerMenu">
-              <li>
-                <a href="javascript:void(0);">本期優惠</a>
-                <div class="headerSubMenuBox">
-                  <div class="headerSubMenu__tite">本期優惠</div>
-                  <ul class="headerSubMenu">
-                    <li><a href="javascript:vodi(0);">主題活動</a></li>
-                    <li><a href="javascript:vodi(0);">精選美味</a></li>
-                    <li><a href="javascript:vodi(0);">嚴選商品</a></li>
-                    <li><a href="javascript:vodi(0);">便利生活</a></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-            <div class="headerMenuSocial">
-              <a href="javascript:void(0);">
-                <i class="icon icon--fb"></i>
-              </a>
-              <a href="javascript:void(0);">
-                <i class="icon icon--ig"></i>
-              </a>
-              <a href="javascript:void(0);">
-                <img src="images/7-11/logo_ichannel.png" alt="">
-              </a>
-            </div>
-          </nav>
-        </div>
+        <nav class="headerNav">
+          <ul class="headerMenu">
+            <li class="headerMenu__item headerMenu__item--more">
+              <input type="checkbox" class="checkboxControl" id="mbMenu-1">
+              <div class="headerMenu__itemArea">
+                <a class="headerMenu__link" href="javascript:void(0);">本期優惠</a>
+                <label class="headerMenu__collapseBtn" for="mbMenu-1"></label>
+              </div>
+              <div class="headerSubMenuBox">
+                <div class="headerSubMenu__title">本期優惠</div>
+                <ul class="headerSubMenu">
+                  <li class="headerSubMenu__item">
+                    <a class="headerSubMenu__itemArea" href="javascript:vodi(0);">主題活動</a>
+                  </li>
+                  <li class="headerSubMenu__item">
+                    <a class="headerSubMenu__itemArea" href="javascript:vodi(0);">精選美味</a>
+                  </li>
+                  <li class="headerSubMenu__item">
+                    <a class="headerSubMenu__itemArea" href="javascript:vodi(0);">嚴選商品</a>
+                  </li>
+                  <li class="headerSubMenu__item">
+                    <a class="headerSubMenu__itemArea" href="javascript:vodi(0);">便利生活</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="headerMenuSocial">
+            <a class="headerMenuSocial__link" href="javascript:void(0);">
+              <i class="icon icon--fb"></i>
+            </a>
+            <a class="headerMenuSocial__link" href="javascript:void(0);">
+              <i class="icon icon--ig"></i>
+            </a>
+            <a class="headerMenuSocial__link" href="javascript:void(0);">
+              <img src="images/7-11/logo_ichannel.png" alt="">
+            </a>
+          </div>
+        </nav>
       </div>
-      <ul class="headerSocial">
-        <li>
-          <a href="javascript:void(0);">
+      <ul class="headerQuery">
+        <li class="headerQuery__item">
+          <a class="headerQuery__itemArea" href="javascript:void(0)">
+            <span class="headerQuery__icon">
+              <img src="images/7-11/icon_a.png">
+            </span>
+            <span class="headerQuery__text">門市查詢</span>
+          </a>
+        </li>
+        <li class="headerQuery__item">
+          <a class="headerQuery__itemArea" href="javascript:void(0)">
+            <span class="headerQuery__icon">
+              <img src="images/7-11/icon_b.png">
+            </span>
+            <span class="headerQuery__text">中獎名單</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="headerOthers">
+        <li class="headerOthers__item">
+          <a class="headerOthers__itemArea" href="javascript:void(0);">
             <i class="icon icon--fb-w"></i>
           </a>
         </li>
-        <li>
-          <a href="javascript:void(0);">
+        <li class="headerOthers__item">
+          <a class="headerOthers__itemArea" href="javascript:void(0);">
             <i class="icon icon--ig-w"></i>
           </a>
         </li>
-        <li>
-          <a href="javascript:void(0);">
+        <li class="headerOthers__item">
+          <a class="headerOthers__itemArea" href="javascript:void(0);">
+            <i class="icon icon--map"></i>
+          </a>
+        </li>
+        <li class="headerOthers__item">
+          <a class="headerOthers__itemArea" href="javascript:void(0);">
             <i class="icon icon--earth"></i>
           </a>
-          <ul>
-            <li>
-              <a href="javascript:void(0);">
-                <span>ENGLISH</span>
-                <span>Corporate</span>
+          <ul class="langMenu">
+            <li class="langMenu__item">
+              <a class="langMenu__itemArea" href="javascript:void(0);">
+                <span class="langMenu__lang">ENGLISH</span>
+                <span class="langMenu__text">Corporate</span>
               </a>
             </li>
-            <li>
-              <a href="javascript:void(0);">
-                <span>ENGLISH</span>
-                <span>Products&Services</span>
+            <li class="langMenu__item"> 
+              <a class="langMenu__itemArea" href="javascript:void(0);">
+                <span class="langMenu__lang">ENGLISH</span>
+                <span class="langMenu__text">Products&Services</span>
               </a>
             </li>
-            <li>
-              <a href="javascript:void(0);">
-                <span>日本語</span>
-                <span>商品・サービス</span>
+            <li class="langMenu__item">
+              <a class="langMenu__itemArea" href="javascript:void(0);">
+                <span class="langMenu__lang">日本語</span>
+                <span class="langMenu__text">商品・サービス</span>
               </a>
             </li>
-            <li>
-              <a href="javascript:void(0);">
-                <span>简体中文</span>
-                <span>产品与服务</span>
+            <li class="langMenu__item">
+              <a class="langMenu__itemArea" href="javascript:void(0);">
+                <span class="langMenu__lang">简体中文</span>
+                <span class="langMenu__text">产品与服务</span>
               </a>
             </li>
-            <li>
-              <a href="javascript:void(0);">
-                <span>繁體中文</span>
-                <span>產品與服務</span>
+            <li class="langMenu__item">
+              <a class="langMenu__itemArea" href="javascript:void(0);">
+                <span class="langMenu__lang">繁體中文</span>
+                <span class="langMenu__text">產品與服務</span>
               </a>
             </li>
           </ul>
@@ -100,6 +134,40 @@
         
       </ul>
     </header>
+    <main>
+      <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam cum architecto dolorem explicabo illum veritatis, tempore autem doloribus fuga itaque. Quae dolorem libero ipsa enim ut numquam nulla illum.
+        Repellendus, eveniet tempora sapiente corrupti nesciunt possimus earum culpa? Beatae, voluptatum magni modi accusantium error assumenda et placeat, excepturi est nam perspiciatis tenetur doloremque illum. Dolore iure explicabo exercitationem ipsa.
+        Maiores nostrum autem praesentium totam, hic necessitatibus doloremque ad eveniet amet pariatur id quia tempora, iste repellendus facere doloribus, error obcaecati voluptatem. Asperiores, soluta possimus. Omnis ratione excepturi sed dicta.
+        Perspiciatis cupiditate quod omnis unde facere veniam nemo, eum optio adipisci animi molestiae quibusdam neque eligendi magnam velit maxime laudantium iure hic ea at illo ex libero necessitatibus. Cumque, inventore?
+        Iste soluta, ipsam quaerat delectus quia vel deleniti accusamus quisquam. Distinctio nemo adipisci a, dolorem consequuntur aut voluptatum iure id mollitia harum perferendis, odit libero, ducimus expedita cumque esse commodi!
+        Veritatis voluptatibus tempore illo nihil rerum facere inventore magnam voluptatem praesentium qui, distinctio eligendi quia minima deleniti voluptates esse alias, exercitationem officia. Dolorem eum vel assumenda nobis accusantium, iure facere!
+        Sunt eius quos debitis cum enim eveniet porro autem perspiciatis, velit, modi dolores excepturi officiis error dolor id numquam sapiente quisquam? Ad harum quis adipisci dolore. Culpa eligendi eaque beatae.
+        Laboriosam doloribus dolores qui eaque, exercitationem ut delectus ipsum repellendus. Eius officiis perspiciatis sint illo distinctio eum maxime ipsum repellendus, sit magni. Architecto deleniti consequatur eos repellendus quo soluta reprehenderit?
+        Doloribus dignissimos cumque quam quisquam, dicta vitae rem unde omnis ab a temporibus sapiente expedita quia optio dolor, repellendus delectus magnam similique suscipit. Similique officia architecto minima commodi officiis reprehenderit!
+        Iusto architecto nulla ipsum? Optio magni corporis mollitia numquam dolores nisi dicta quasi facere odio dolorem, ipsa, quidem veniam explicabo ad nulla, totam velit. Culpa iure est modi provident rerum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam cum architecto dolorem explicabo illum veritatis, tempore autem doloribus fuga itaque. Quae dolorem libero ipsa enim ut numquam nulla illum.
+          Repellendus, eveniet tempora sapiente corrupti nesciunt possimus earum culpa? Beatae, voluptatum magni modi accusantium error assumenda et placeat, excepturi est nam perspiciatis tenetur doloremque illum. Dolore iure explicabo exercitationem ipsa.
+          Maiores nostrum autem praesentium totam, hic necessitatibus doloremque ad eveniet amet pariatur id quia tempora, iste repellendus facere doloribus, error obcaecati voluptatem. Asperiores, soluta possimus. Omnis ratione excepturi sed dicta.
+          Perspiciatis cupiditate quod omnis unde facere veniam nemo, eum optio adipisci animi molestiae quibusdam neque eligendi magnam velit maxime laudantium iure hic ea at illo ex libero necessitatibus. Cumque, inventore?
+          Iste soluta, ipsam quaerat delectus quia vel deleniti accusamus quisquam. Distinctio nemo adipisci a, dolorem consequuntur aut voluptatum iure id mollitia harum perferendis, odit libero, ducimus expedita cumque esse commodi!
+          Veritatis voluptatibus tempore illo nihil rerum facere inventore magnam voluptatem praesentium qui, distinctio eligendi quia minima deleniti voluptates esse alias, exercitationem officia. Dolorem eum vel assumenda nobis accusantium, iure facere!
+          Sunt eius quos debitis cum enim eveniet porro autem perspiciatis, velit, modi dolores excepturi officiis error dolor id numquam sapiente quisquam? Ad harum quis adipisci dolore. Culpa eligendi eaque beatae.
+          Laboriosam doloribus dolores qui eaque, exercitationem ut delectus ipsum repellendus. Eius officiis perspiciatis sint illo distinctio eum maxime ipsum repellendus, sit magni. Architecto deleniti consequatur eos repellendus quo soluta reprehenderit?
+          Doloribus dignissimos cumque quam quisquam, dicta vitae rem unde omnis ab a temporibus sapiente expedita quia optio dolor, repellendus delectus magnam similique suscipit. Similique officia architecto minima commodi officiis reprehenderit!
+          Iusto architecto nulla ipsum? Optio magni corporis mollitia numquam dolores nisi dicta quasi facere odio dolorem, ipsa, quidem veniam explicabo ad nulla, totam velit. Culpa iure est modi provident rerum?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam cum architecto dolorem explicabo illum veritatis, tempore autem doloribus fuga itaque. Quae dolorem libero ipsa enim ut numquam nulla illum.
+            Repellendus, eveniet tempora sapiente corrupti nesciunt possimus earum culpa? Beatae, voluptatum magni modi accusantium error assumenda et placeat, excepturi est nam perspiciatis tenetur doloremque illum. Dolore iure explicabo exercitationem ipsa.
+            Maiores nostrum autem praesentium totam, hic necessitatibus doloremque ad eveniet amet pariatur id quia tempora, iste repellendus facere doloribus, error obcaecati voluptatem. Asperiores, soluta possimus. Omnis ratione excepturi sed dicta.
+            Perspiciatis cupiditate quod omnis unde facere veniam nemo, eum optio adipisci animi molestiae quibusdam neque eligendi magnam velit maxime laudantium iure hic ea at illo ex libero necessitatibus. Cumque, inventore?
+            Iste soluta, ipsam quaerat delectus quia vel deleniti accusamus quisquam. Distinctio nemo adipisci a, dolorem consequuntur aut voluptatum iure id mollitia harum perferendis, odit libero, ducimus expedita cumque esse commodi!
+            Veritatis voluptatibus tempore illo nihil rerum facere inventore magnam voluptatem praesentium qui, distinctio eligendi quia minima deleniti voluptates esse alias, exercitationem officia. Dolorem eum vel assumenda nobis accusantium, iure facere!
+            Sunt eius quos debitis cum enim eveniet porro autem perspiciatis, velit, modi dolores excepturi officiis error dolor id numquam sapiente quisquam? Ad harum quis adipisci dolore. Culpa eligendi eaque beatae.
+            Laboriosam doloribus dolores qui eaque, exercitationem ut delectus ipsum repellendus. Eius officiis perspiciatis sint illo distinctio eum maxime ipsum repellendus, sit magni. Architecto deleniti consequatur eos repellendus quo soluta reprehenderit?
+            Doloribus dignissimos cumque quam quisquam, dicta vitae rem unde omnis ab a temporibus sapiente expedita quia optio dolor, repellendus delectus magnam similique suscipit. Similique officia architecto minima commodi officiis reprehenderit!
+            Iusto architecto nulla ipsum? Optio magni corporis mollitia numquam dolores nisi dicta quasi facere odio dolorem, ipsa, quidem veniam explicabo ad nulla, totam velit. Culpa iure est modi provident rerum?</p>
+      </div>
+    </main>
   </div>
 </body>
 </html>
